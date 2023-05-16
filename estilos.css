@@ -1,0 +1,194 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+h1 {
+    font-size: 30px;
+    font-style: italic;
+    color: white;
+}
+
+h2 {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 2px solid rgb(38, 38, 87);
+    font-style: italic;
+    color: rgb(38, 38, 87);
+}
+
+h3 {
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: rgb(38, 38, 87);
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+.sobre {
+    display: flex;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.sobre p {
+    font-size: large;
+    padding: 10px;
+}
+
+.sobre img {
+    max-width: 100%;
+    display: block;
+    margin: 0 -30px;
+    width: 3000px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background-color: rgb(38, 38, 156);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.produtos > div {
+    flex: 1 1 200px;
+    margin: 10px;
+} 
+
+.produtos img {
+    max-width: 100%;
+    display: block;
+}
+
+.produtos p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+.sep {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+    .menu {
+        display: block;
+    }
+    
+    .menu li a {
+        padding: 5px;
+    }
+
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .sobre {
+        display: block;
+        max-width: 80%;
+    }
+
+    .sobre img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .sobre p {
+        font-size: large;
+    }
+
+    .produtos {
+        display: flex;
+    max-width: 80%;
+    }
+
+    .produtos > div {
+        margin: 10px;
+        margin-bottom: 50px;
+    }
+
+    .sep {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .sobre {
+        display: block;
+        max-width: 80%;
+        align-items: center;
+    }
+
+    .sobre img {
+        margin: 0 auto;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    .sobre p {
+        margin-top: 25px;
+    }
+
+    .produtos {
+        display: flex;
+        max-width: 80%;
+    }
+
+    .produtos > div {
+        margin: 10px;
+        margin-bottom: 30px;
+        }
+
+    .sep {
+        max-width: 80%;
+        margin-bottom: 30px;
+        }
+}
+
+
+
+
